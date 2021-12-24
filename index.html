@@ -23,7 +23,7 @@
 
 <body>
     <!--NAV BAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top" id="navbar">
         <div class="container-fluid" id="nav-bar-css">
             <a class="navbar-brand" href="#">Run Chicago Marathon</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
@@ -71,7 +71,7 @@
     </section>
 
     <!-- BOXES-->
-    <section class="p-5">
+    <section class="p-5" id="showcase-section">
         <div class="container">
             <div class="row text-center g-3">
                 <div class="col-md">
@@ -129,13 +129,13 @@
                     <img src="img/TheBean.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md p-5">
-                    <h2>Discover Chicago by running it!</h2>
+                    <h2 class="display-1">Discover Chicago by running it!</h2>
                     <p class="lead">One of the world's premiere marathon.
                     </p>
                     <p>The Chicago Marathon is considered one of the best marathon's in the United States. It offers
                         a flat, scenic, and unforgettable course that you will forget it was ever windy.
                     </p>
-                    <a href="" class="btn btn-light mt-3">
+                    <a href="" class="btn btn-primary mt-3">
                         <i class="bi bi-chevron-right"></i>Read More
                     </a>
                 </div>
@@ -145,11 +145,11 @@
     </section>
 
 
-    <section class="p-5 bg-dark text-light" id="learn">
+    <section class="p-5 text-light" id="learn-coach">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
-                    <h2>Get <span class="text-warning">personalized coaching</span></h2>
+                    <h2 class="display-3"><span class="text-warning">Get personalized coaching</span></h2>
                     <p class="lead">Whether you're an amateur or a seasoned runner, get personalized coaching right
                         here!
                     </p>
@@ -157,7 +157,7 @@
                         recipes,
                         and a community that will help push you all the way to the finish line in Chicago.
                     </p>
-                    <a href="" class="btn btn-light mt-3">
+                    <a href="" class="btn btn-primary mt-3">
                         <i class="bi bi-chevron-right"></i> Read More
                     </a>
                 </div>
@@ -172,7 +172,7 @@
     <!--Question Accordion-->
     <section class="p-5" id="questions">
         <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <h2 class="text-center mb-4 display-3">Frequently Asked Questions</h2>
             <div class="accordion" id="questions">
                 <!--ITEM 1-->
                 <div class="accordion-item">
@@ -225,14 +225,14 @@
 
         <!-- NEWSLETTER -->
 
-        <section class="bg-success text-light p-5">
+        <section class="text-light p-5" id="newsletter">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center">
-                    <h3 class="mb-3 mb-md-0">Sign up for Updates</h3>
+                    <h3 class="mb-3 mb-md-0 display-3">Sign up for Updates</h3>
     
                     <div class="input-group news-input">
-                        <input type="text" class="form-control" placeholder="Enter Email">
-                        <button class="btn btn-warning btn-lg" type="button">Keep Me Informed</button>
+                        <input type="text" class="form-control" placeholder="Enter Email JustinExample@email.net">
+                        <button class="btn btn-primary btn-lg" type="button">Keep Me Informed</button>
                     </div>
     
                 </div>
@@ -241,10 +241,10 @@
 
     <!--INSTRUCTORS -->
 
-    <section id="coaches" class="p-5 bg-primary">
+    <section id="coaches" class="p-5">
         <div class="container">
-            <h2 class="text-center text-white">Our Coaches</h2>
-            <p class="lead text-center text-white mb-5">
+            <h2 class="text-center text-dark display-3">Our Coaches</h2>
+            <p class="lead text-center text-dark mb-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iure.
             </p>
             <div class="row g-4">

@@ -1,3 +1,7 @@
+#navbar {
+    background-color: black;
+}
+
 body::before {
     display: block;
     content: '';
@@ -25,13 +29,17 @@ body::before {
 
 }
 
-    /*brings text forward - use with body::after*/
-    body * {
+#showcase-section {
+    background: black
+}
+
+/*brings text forward - use with body::after*/
+body * {
         z-index: 1 
     }
     
-    /* Below adds a dark overlay*/
-    body::after {
+/* Below adds a dark overlay*/
+body::after {
         content: '';
         position: absolute;
         top: 0;
@@ -40,3 +48,28 @@ body::before {
         height: 100%;
         background-color: rgba(0,0,0,0.55);
     }
+
+
+#learn {
+    background-color: slategray
+}
+
+#learn-coach {
+    background-color: black;
+}
+
+#questions {
+    background-color: slategray;
+}
+
+.accordion {
+    background-color: blue;
+}
+
+#newsletter {
+    background-color: black;
+}
+
+#coaches{
+    background-color: slategray;
+}
