@@ -71,9 +71,13 @@ body::after {
 }
 
 #coaches{
-    background-color: slategray;
+    background-color: black;
 }
 
 #maps {
     background-color: black
+}
+
+#footer {
+    background-color: black; 
 }
