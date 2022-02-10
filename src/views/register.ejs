@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%=title22%></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title22%>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -16,16 +23,51 @@
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-    <!-- 
-            THIS WORKS!
-        <% datas.map((i) => {%>
-        <div>
-            <h3><%=i.name%></h3>
-            <p><%=i.quote%>  </p>
+    <div id="top"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
+    <div id="left"></div>
+
+    <div class="grid-container">
+        <div class="header-content">
+            <h1 class="text">NYC Marathon <i class="bi bi-chevron-right"></i></h1>
         </div>
-    <%})%> -->
+        <div class="navigation-content">
+            <nav>
+                <ul>
+                    <li><a href="index"><i class="bi bi-house-fill"></i> NYC Marathon 2022</a></li>
+                    <li><a href="register"><i class="bi bi-chevron-right"></i> Register</a></li>
+                    <li><a href="discover"><i class="bi bi-binoculars-fill"></i> Discover</a></li>
+                    <li><a href="Coaching"><i class="bi bi-person-bounding-box"></i> Coaches</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <h1 class="text">Registration</h1>
+            <form action=" " method="post" enctype="application/x-www-form-urlencoded">
+
+            
+                First Name: <input type="text" name="firstname" maxlength="30" placeholder="Justin" required><br/>
+                Last Name: <input type="text" name="lastname" maxlength="30" placeholder="Example" required><br/>
+                Email Address: <input type="email" name="email" placeholder="JustinExample@geezmail.com" required><br/>
+                Phone: <input type="tel"><br/>
+                <input type="hidden" name="register" value="RegistrationForm">
+                <input type="submit" value="Send">
+            
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <p></p>
+        </div>
+
+    </div>
+    
+
+
 
 </body>
+
 </html>
