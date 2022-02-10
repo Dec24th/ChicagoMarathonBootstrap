@@ -45,13 +45,12 @@ body {
 
 .grid-container {
     display: grid;
-    grid: auto auto auto / auto auto auto;
+    grid: repeat(6, auto) / repeat (6,auto);
     grid-template-areas:
         "header header header"
         "navigation main main"
-        ". main main"
-        ". main main"
-        ". main main"
+        ". main main" 
+        ". . ."
         "footer footer footer"
     ;
     row-gap: 1.5em;
@@ -106,7 +105,8 @@ li a:hover {
 }
 
 .footer-content {
-    background-color: hotpink;
+    background-color: black;
+    align-items: center;
 }
 
 form>input {
@@ -131,28 +131,26 @@ input[type=submit] {
 
 input[type=text] {
     width: 25%;
-    padding: 12px 12px;
-    margin: 8px 0;
+    padding: 1px 12px;
+    margin: 4px 4px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
 }
-
 input[type=email] {
     width: 25%;
-    padding: 12px 12px;
-    margin: 8px 0;
+    padding: 1px 12px;
+    margin: 4px 4px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
 }
-
 input[type=tel] {
     width: 25%;
-    padding: 12px 12px;
-    margin: 8px 0;
+    padding: 1px 12px;
+    margin: 4px 4px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 2px;

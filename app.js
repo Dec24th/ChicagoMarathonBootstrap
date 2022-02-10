@@ -20,10 +20,21 @@ app.get('/', (req, res)=>{
 
 app.get('/register', (req, res) => {
     res.render('register', { title22: "Registration | NYC Marathon 2022", datas } )
+
+})
+
+app.get('/discover', (req, res) => {
+    res.render('discover', ()=>{
+        console.log('discover page rendered')
+    })
 })
 
 app.get('/coaching', (req, res) => {
     res.render('coaching', {coaches})
+})
+
+app.post('/register', (req, res) => {
+    res.send("Thank you for registering")
 })
 
 app.listen(PORT, () => {
