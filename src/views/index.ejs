@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicago Marathon</title>
+    <title>NYC Marathon 2022</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -22,377 +22,74 @@
 </head>
 
 <body>
-    <!--NAV BAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-1 fixed-top" id="navbar">
-        <div class="container-fluid" id="nav-bar-css">
-            <a class="navbar-brand" href="#">Run Chicago Marathon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#questions">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#coaches">Coaches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#maps">Maps</a>
-                    </li>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="top"></div>
+    <div id="right"></div>
+    <div id="bottom"></div>
+    <div id="left"></div>
 
-    <!--SHOWCASE-->
-
-
-    <section id="showcase-container" class="text-light p-5 p-lg-0 pt-lg-5 text-align-left text-sm-start">
+    <section id="jumbotron" class="text-light p-5 p-lg-0 pt-lg-5 text-align-left text-sm-start">
         <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1 class="display-1"><span class="text-warning">Chicago Marathon 2022</span><i
-                            class="bi bi-chevron-right"></i>Oct 9th</h1>
-                    <p class="lead my-4">
-                        Run the Chicago Marathon in 2022. Chicago's premiere marathon event will
-                        take place on October 9th. Discover Chicago by running 26.2 miles of it.
-                    </p>
-                </div>
-                <img class="img-fluid w-50 d-none " src="img/Runners-Legs.jpg" alt="icon ">
-            </div>
             <div class="row">
-                <button class="btn btn-primary m-4 btn-md" data-bs-toggle="modal" data-bs-target="#enroll">Start
-                    Registration</button>
+                <div class="col-12 order-md-1 d-sm-flexalign-items-center justify-content-between">
+                    <h1 class="display-1 text-warning"><i class="bi bi-chevron-right"></i>NYC Marathon | Nov 6th, 2022 <i class="bi bi-chevron-left"></i></h1>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- BOXES-->
-    <section class="p-5" id="showcase-section">
-        <div class="container">
-            <div class="row text-center g-3">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3 class="card-title">
-                                In-Person
-                            </h3>
-                            <p class="card-text">Read about the course, history, and events for 2022.</p>
-                            <a href="#" class="btn btn-outline-light">Read More</a>
-                        </div>
+    <section id="register">
+        <div class="container"> 
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-6 col-md-6 order-md-1">
+                        <h2 class="display-1">Register for the NYC Marathon </h2>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title">
-                                Virtual
-                            </h3>
-                            <p class="card-text">We will not be offering a virtual version in 2022.</p>
-                            <a href="#" class="btn btn-outline-light">Register for In-Person</a>
-                        </div>
+                    <div class="col-6 col-md-6 order-md-2">
+                        <h4 class="display-1 arrow "><a href="register"><i class="bi bi-chevron-right"></i></a></h4>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-cash"></i>
-                            </div>
-                            <h3 class="card-title">
-                                Donate
-                            </h3>
-                            <p class="card-text">Donate to the cause. Thank you.</p>
-                            <a href="#" class="btn btn-outline-light">Donate</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div> 
         </div>
     </section>
-
     <!--Learn Sections-->
 
-    <section class="p-5" id="learn">
+    <section id="discover">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="img/TheBean.jpg" class="img-fluid" alt="">
+                <div class="col-6 col-m-6 order-sm-2">
+                    <h2 class="display-1">Discover NYC by running it!</h2>
                 </div>
-                <div class="col-md p-5">
-                    <h2 class="display-1">Discover Chicago by running it!</h2>
-                    <p class="lead">One of the world's premiere marathon.
-                    </p>
-                    <p>The Chicago Marathon is considered one of the best marathon's in the United States. It offers
-                        a flat, scenic, and unforgettable course that you will forget it was ever windy.
-                    </p>
-                    <a href="" class="btn btn-outline-dark mt-3">
-                        <i class="bi bi-chevron-right"></i>Read More
-                    </a>
+                <div class="col-6 col-md-6 order-md-2">
+                    <h4 class="display-1 arrow"><a href="discover"><i class="bi bi-chevron-right"></i></a></h4>
                 </div>
             </div>
         </div>
-
     </section>
 
 
-    <section class="p-5 text-light" id="learn-coach">
+    <section id="coaches">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h2 class="display-3"><span class="text-warning">Get personalized coaching</span></h2>
-                    <p class="lead">Whether you're an amateur or a seasoned runner, get personalized coaching right
-                        here!
-                    </p>
-                    <p>Personalized coaching includes 1-on-1 coaching with a certified personal trainer, diet tips and
-                        recipes,
-                        and a community that will help push you all the way to the finish line in Chicago.
-                    </p>
-                    <a href="" class="btn btn-outline-primary mt-3">
-                        <i class="bi bi-chevron-right"></i> Read More
-                    </a>
+                <div class="col-6 col-md-6">
+                    <h2 class="display-1">Get personalized coaching</h2>
                 </div>
-                <div class="col-md">
-                    <img src="img/RunningCoach.jpg" class="img-fluid" alt="">
+                <div class="col-6 col-md-6 order-md-2">
+                    <h4 class="display-1 arrow"><a href="coaching"><i class="bi bi-chevron-right"></i></a></h4>
                 </div>
             </div>
         </div>
-
-    </section>
-
-    <!--Question Accordion-->
-    <section class="p-5" id="questions">
-        <div class="container">
-            <h2 class="text-center mb-4 display-3">Frequently Asked Questions</h2>
-            <div class="accordion" id="questions">
-                <!--ITEM 1-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-1">
-                            What is the course like?
-                        </button>
-                    </h2>
-                    <div id="question-1" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            The course starts in Millenium Park, runs through the heart of Chicago, then uptown along
-                            the Michigan Lake, passing through Boystown
-                            and back down to Millenium Park for a memorable finish.
-                        </div>
-                    </div>
-                </div>
-                <!--ITEM 2-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-2">
-                            How much does it cost?
-                        </button>
-                    </h2>
-                    <div id="question-2" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            $200 through September 30th, 2022
-                        </div>
-                    </div>
-                </div>
-                <!--ITEM 3-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#question-3">
-                            Is this a Boston Qualifier?
-                        </button>
-                    </h2>
-                    <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Yes. This is a USATF certified course.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- NEWSLETTER 
-
-        <section class="text-light p-5" id="newsletter">
-            <div class="container">
-                <div class="d-md-flex justify-content-between align-items-center">
-                    <h3 class="mb-3 mb-md-0 display-3 text-warning">Sign up for Updates</h3>
-    
-                    <div class="input-group news-input">
-                        <input type="text" class="form-control" placeholder="Enter Your Email Address">
-                        <button class="btn btn-outline-primary btn-lg" type="button">Keep Me Informed</button>
-                    </div>
-    
-                </div>
-            </div>
-        </section>-->
-
-    <!--INSTRUCTORS -->
-
-    <section id="coaches" class="p-5">
-        <div class="container ">
-            <h2 class="text-center text-warning display-3">Our Coaches</h2>
-            <p class="lead text-center text-white mb-5">
-                Get professional coaching advice
-            </p>
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle mb-3"
-                                    alt="" />
-                                <h3 class="card-title mb-3">Max Powers</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/men/17.jpg" class="rounded-circle mb-3"
-                                    alt="" />
-                                <h3 class="card-title mb-3">Justin Example</h3>
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Quibusdam,
-                                    unde nihil.</p>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-circle mb-3"
-                                    alt="" />
-                                <h3 class="card-title mb-3">Erin Space</h3>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Laudantium.
-                                </p>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="https://randomuser.me/api/portraits/women/27.jpg" class="rounded-circle mb-3"
-                                    alt="" />
-                                <h3 class="card-title mb-3">Martha Graham</h3>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <!-- Contact & Map    -->
-    <section class="bg-secondary p-5" id="maps">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md">
-                    <h2 class="text-center text-dark mb-4 display-3">Map Information</h2>
-                    <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Start Location: </span> Millenium Park
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Expo Location: </span> Pier Convention Center
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Contact Information </span> info@chicagomarathon.org
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md">
-                    <div id="map" style="width: 400px; height: 300px; border-radius: 10px;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!--FOOTER-->
-    <footer class="p-5text-warning text-center position-relative" id="footer">
+    <footer class="p-5 text-warning text-center position-relative" id="footer">
         <div class="container">
-            <p class="lead text-warning">Copyright &copy: Chicago Marathon</p>
+            <p class="lead text-warning">Copyright &copy : Allan Acosta</p>
             <a href="#" class="position-absolute bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
     </footer>
-
-    <!-- MODAL -->
-    <div class="modal fade " id="enroll" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register for the <span class="text-warning">Chicago
-                            Marathon 2022 today!</span></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">All Fields Required</p>
-                    <form action="">
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">First Name</label>
-                            <div class="input form-control" id="first-name"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">Last Name</label>
-                            <div class="input form-control" id="first-name"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">Address</label>
-                            <div class="input form-control" id="first-name"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">Email</label>
-                            <div class="input form-control" id="first-name"></div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">Phone Number</label>
-                            <div class="input form-control" id="first-name"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
 
 
     <!-- JavaScript Bundle with Popper -->

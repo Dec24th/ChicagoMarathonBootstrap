@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Dec24th/ChicagoMarathonBootstrap#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1",
     "debug": "^4.3.3",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
