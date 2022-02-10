@@ -3,19 +3,55 @@ body {
     color: white;
 }
 
+/* Fixed Border */
+#top, #bottom, #left, #right {
+    background: #1d1d1d;
+    position: fixed;
+    z-index: 999;
+}
+
+#left, #right {
+    top: 0;
+    bottom: 0;
+    width: 20px;
+}
+
+#top, #bottom {
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top {
+    top: 0
+}
+
+#bottom {
+    bottom: 0;
+}
+
 .text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
 }
 
 .grid-container {
-    border: solid 5px white;
     display: grid;
-    grid: 4.4em 1fr 4.4em / 20% 1fr 20%;
+    grid: auto auto auto / auto auto auto;
     grid-template-areas:
         "header header header"
         "navigation main main"
-        ". . ."
+        ". main main"
+        ". main main"
+        ". main main"
         "footer footer footer"
     ;
     row-gap: 1.5em;
@@ -24,6 +60,7 @@ body {
 }
 
 .header-content {
+
     grid-area: header;
     background-color: black;
     color: goldenrod;
@@ -66,4 +103,58 @@ li a:hover {
     background-color: rgb(24, 23, 23);
     color: white;
 
+}
+
+.footer-content {
+    background-color: hotpink;
+}
+
+form>input {
+    display: inline;
+}
+
+#form-content {
+    border-radius: 5px;
+    background-color: rgb(24, 23, 23);
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 25%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
+    width: 25%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
 }
