@@ -34,7 +34,8 @@ app.get('/coaching', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
-    res.send("Thank you for registering")
+    res.send('Thank you for f')
+    console.log('Goodbye Click')
 })
 
 app.listen(PORT, () => {

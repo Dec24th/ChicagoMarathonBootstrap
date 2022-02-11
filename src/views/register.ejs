@@ -46,33 +46,40 @@
             </nav>
         </div>
         <div class="main-content">
-            <h1 class="text">Fill out the form below to register</h1>
-            <div id="form-content"> 
+            <h1 class="text">Register for the NYC Marathon 2022</h1>
+            <div id="form-content">
                 <form action=" " method="post" enctype="application/x-www-form-urlencoded">
-
-
-                    First Name: <input type="text" name="firstname" maxlength="30" placeholder="Justin" required><br />
-
-                    Last Name: <input type="text" name="lastname" maxlength="30" placeholder="Example" required><br />
-                    Email Address: <input type="email" name="email" placeholder="JustinExample@geezmail.com"
-                        required><br />
-                    Phone: <input type="tel"><br />
-                    <input type="hidden" name="register" value="RegistrationForm">
-                    <input type="submit" value="Send">
-
-                </form>
+                    <div class="form-control">
+                        <label for="firstname">
+                            First Name:
+                        </label>
+                        <input type="text" id="firstname" maxlength="30" placeholder="Justin">
+                        <label for="lastname">
+                            Last Name:
+                        </label>
+                        <input type="text" id="lastname" maxlength="30" placeholder="Example">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">
+                            Email Address:
+                        </label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="tel">
+                            Tel:
+                        </label>
+                        <input type="tel" id="tel" placeholder="(098)765-4321">
+                    </div>
+                     <button> Submit </button>
+                 </form>
             </div>
         </div>
-
         <div class="footer-content">
             Allan Acosta
         </div>
-
     </div>
 
-
-
-
+    </div>
+<script src="register.js"></script>
 </body>
 
 </html>
